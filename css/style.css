@@ -238,6 +238,29 @@ li {
   color: var(--title-font);
 }
 
+.sidebar .navbar ul .item-list {
+  padding: 7px 20px;
+}
+.sidebar .navbar ul li a {
+  color: var(--title-font);
+}
+
+.sidebar .navbar ul li a i {
+  font-size: 18px;
+  width: 40px;
+  height: 40px;
+  background-color: var(--bg-color-dark);
+  display: inline-flex;
+  border-radius: 40px;
+  margin: 0 8px 0 0;
+}
+.sidebar .navbar ul li .active {
+  background-color: var(--bg-color-dark);
+  color: var(--primary-color);
+  border-left: 3px solid var(--pr`imary-color);
+  border-radius: 0 30px 30px 0;
+}
+
 /* main-content */
 .main-content {
   margin-left: var(--sidebar-width);
