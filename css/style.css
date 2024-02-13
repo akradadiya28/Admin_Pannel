@@ -4,10 +4,14 @@
 }
 
 :root {
+  --primary-color: #eb1616;
+  --white-color: #ffffff;
+  --title-font: #6c7293;
   --sidebar-width: 250px;
   --sidebar-height: 100vh;
   --header-height: 64px;
-  --font-family: "Open Sans";
+  --primary-font-family: "Open Sans";
+  --secondary-font-family: "Roboto";
   --font-size: 16px;
   --line-height: 1.6;
   --font-weight: 400;
@@ -17,7 +21,7 @@
 }
 
 body {
-  font-family: var(--font-family);
+  font-family: var(--primary-font-family);
   font-size: var(--font-size);
   line-height: var(--line-height);
   background-color: var(--bg-color-dark);
@@ -169,6 +173,9 @@ ol {
 li {
   list-style: none;
 }
+.pos-relative {
+  position: relative;
+}
 
 /* header */
 .header-main {
@@ -186,8 +193,49 @@ li {
   height: var(--sidebar-height);
   background-color: var(--sidebar-color-dark);
   position: fixed;
+  padding: 0.5rem 0;
   top: 0;
   left: 0;
+}
+.sidebar .logo {
+  margin: 0 24px 16px;
+  padding: 5px 0;
+}
+.sidebar .logo a h3 {
+  font-size: 28px;
+  color: var(--primary-color);
+  margin: 0 0 8px;
+}
+.sidebar .user {
+  margin: 0 0 24px 24px;
+}
+.sidebar .user img {
+  border-radius: 50%;
+}
+.sidebar .user .user-name {
+  margin: 0 0 0 16px;
+}
+.sidebar .user .active {
+  position: absolute;
+  background-color: #198754;
+  border-radius: 50%;
+  padding: 4px;
+  border: 2px solid var(--white-color);
+  z-index: 99;
+  top: 28px;
+  right: 0;
+}
+.sidebar .user .user-name h6 {
+  font-weight: 700;
+  line-height: 1.2;
+  color: var(--white-color);
+  font-family: var(--secondary-font-family);
+  font-size: 1rem;
+}
+.sidebar .user .user-name span {
+  font-size: 1rem;
+  font-family: var(--primary-font-family);
+  color: var(--title-font);
 }
 
 /* main-content */
