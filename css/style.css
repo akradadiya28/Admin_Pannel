@@ -257,7 +257,7 @@ li {
 .sidebar .navbar ul li .active {
   background-color: var(--bg-color-dark);
   color: var(--primary-color);
-  border-left: 3px solid var(--pr`imary-color);
+  border-left: 3px solid var(--primary-color);
   border-radius: 0 30px 30px 0;
 }
 
