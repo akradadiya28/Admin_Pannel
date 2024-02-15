@@ -193,9 +193,10 @@ li {
   height: var(--sidebar-height);
   background-color: var(--sidebar-color-dark);
   position: fixed;
-  padding: 0.5rem 0;
+  padding: 8px 24px 24px 0;
   top: 0;
   left: 0;
+  overflow-y: scroll;
 }
 .sidebar .logo {
   margin: 0 24px 16px;
@@ -241,7 +242,8 @@ li {
 .sidebar .navbar ul .item-list {
   padding: 7px 20px;
 }
-.sidebar .navbar ul li a {
+.sidebar .navbar ul .item-list a {
+  /* display: inline-block; */
   color: var(--title-font);
 }
 
@@ -254,11 +256,39 @@ li {
   border-radius: 40px;
   margin: 0 8px 0 0;
 }
-.sidebar .navbar ul li .active {
+.sidebar .navbar ul .active {
   background-color: var(--bg-color-dark);
-  color: var(--primary-color);
   border-left: 3px solid var(--primary-color);
   border-radius: 0 30px 30px 0;
+}
+.sidebar .navbar ul .active a {
+  color: var(--primary-color);
+}
+.sidebar .navbar ul .active a i {
+  background-color: #191c24;
+}
+.sidebar .dropdown .dropdown-menu {
+  padding: 8px 0;
+  margin: 2px 0 0;
+}
+.sidebar .dropdown .dropdown-menu a {
+  padding: 4px 16px 4px 5px;
+  display: block;
+}
+.sidebar .dropdown .dropdown-menu a:hover {
+  background-color: var(--bg-color-dark);
+  border-radius: 0 30px 30px 0;
+}
+.sidebar .dropdown::after {
+  content: "\f107";
+  font-family: "Font Awesome 6 Free";
+  font-size: 14px;
+  position: absolute;
+  font-weight: 900;
+  top: 17px;
+  right: 30px;
+  color: var(--title-font);
+  transition: 0.5s;
 }
 
 /* main-content */
