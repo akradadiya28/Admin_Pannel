@@ -1,5 +1,8 @@
 $(document).ready(function () {
     $(".dropdown").click(function () {
-        $(this).parant("li").siblings("li").children("li").slideToggle();
+        $(this).next(".dropdown-menu").slideToggle("fast");
+        $(this).addClass("active");
+        $(this).parent("li").siblings("li").children(".dropdown-menu").slideUp("fast");
+        $(this).parent("li").siblings("li").children(".dropdown").removeClass("active")
     })
 })
