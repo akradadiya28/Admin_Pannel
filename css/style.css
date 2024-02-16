@@ -267,19 +267,19 @@ li {
 .sidebar .navbar ul .active a i {
   background-color: #191c24;
 }
-.sidebar .dropdown .dropdown-menu {
+.sidebar li .dropdown .dropdown-menu {
   padding: 8px 0;
   margin: 2px 0 0;
 }
-.sidebar .dropdown .dropdown-menu a {
+.sidebar li .dropdown .dropdown-menu a {
   padding: 4px 16px 4px 5px;
   display: block;
 }
-.sidebar .dropdown .dropdown-menu a:hover {
+.sidebar .item-list .dropdown .dropdown-menu a:hover {
   background-color: var(--bg-color-dark);
   border-radius: 0 30px 30px 0;
 }
-.sidebar .dropdown::after {
+.sidebar li .dropdown::after {
   content: "\f107";
   font-family: "Font Awesome 6 Free";
   font-size: 14px;
