@@ -5,4 +5,7 @@ $(document).ready(function () {
         $(this).parent("li").siblings("li").children(".dropdown-menu").slideUp("fast");
         $(this).parent("li").siblings("li").children(".dropdown").removeClass("active")
     })
+    $(".form-control").click(function () {
+        $(this).addClass("outline");
+    })
 })

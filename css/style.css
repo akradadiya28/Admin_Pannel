@@ -232,10 +232,11 @@ li {
 }
 
 .sidebar .navbar ul li.item-list {
-  padding: 7px 20px;
 }
 .sidebar .navbar ul .item-list a {
   color: var(--title-font);
+  padding: 7px 20px;
+  display: block;
 }
 
 .sidebar .navbar ul li a i {
@@ -319,8 +320,9 @@ li {
   width: 100%;
   display: block;
   font-weight: 400;
+}
+.outline {
   outline: 3px solid rgba(235, 22, 22, 0.3);
-  transition: all 0.3s;
 }
 
 .header-main .search .form-control::placeholder {
