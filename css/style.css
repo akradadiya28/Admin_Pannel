@@ -101,6 +101,8 @@ body {
 .w-10,
 .w-11,
 .w-12 {
+  padding-left: var(--gutter-width);
+  padding-right: var(--gutter-width);
   border: 1px solid black;
 }
 
@@ -175,16 +177,6 @@ li {
 }
 .pos-relative {
   position: relative;
-}
-
-/* header */
-.header-main {
-  width: 100%;
-  height: var(--header-height);
-  top: 0;
-  left: var(--sidebar-width);
-  position: fixed;
-  background-color: var(--sidebar-color-dark);
 }
 
 /* sidebar */
@@ -291,6 +283,48 @@ li {
   right: 30px;
   color: var(--title-font);
   transition: 0.5s;
+}
+
+/* header */
+.header-main {
+  width: 100%;
+  height: var(--header-height);
+  top: 0;
+  left: var(--sidebar-width);
+  position: fixed;
+  background-color: var(--sidebar-color-dark);
+}
+
+.header-main .hamburgar-menu a {
+  color: var(--primary-color);
+  background-color: var(--bg-color-dark);
+  font-size: 18px;
+  width: 40px;
+  height: 40px;
+  display: inline-flex;
+  border-radius: 40px;
+}
+
+.header-main .search {
+  margin-left: 1.5rem;
+}
+
+.header-main .search .form-control {
+  padding: 6px 12px;
+  background-color: var(--bg-color-dark);
+  border: none;
+  border-radius: 5px;
+  line-height: 1.5;
+  color: var(--title-font);
+  width: 100%;
+  display: block;
+  font-weight: 400;
+  outline: 3px solid rgba(235, 22, 22, 0.3);
+  transition: all 0.3s;
+}
+
+.header-main .search .form-control::placeholder {
+  font-size: 16px;
 }
 
 /* main-content */
