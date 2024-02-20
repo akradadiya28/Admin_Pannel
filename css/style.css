@@ -103,7 +103,7 @@ body {
 .w-12 {
   padding-left: var(--gutter-width);
   padding-right: var(--gutter-width);
-  border: 1px solid black;
+  /* border: 1px solid black; */
 }
 
 .flex-wrap {
@@ -151,6 +151,10 @@ body {
   flex-wrap: wrap;
 }
 
+.d-block {
+  display: block;
+}
+
 .text-center {
   text-align: center;
 }
@@ -175,6 +179,7 @@ ol {
 li {
   list-style: none;
 }
+
 .pos-relative {
   position: relative;
 }
@@ -190,24 +195,30 @@ li {
   left: 0;
   overflow-y: scroll;
 }
+
 .sidebar .logo {
   margin: 0 24px 16px;
   padding: 5px 0;
 }
+
 .sidebar .logo a h3 {
   font-size: 28px;
   color: var(--primary-color);
   margin: 0 0 8px;
 }
+
 .sidebar .user {
   margin: 0 0 24px 24px;
 }
-.sidebar .user img {
+
+.user img {
   border-radius: 50%;
 }
+
 .sidebar .user .user-name {
   margin: 0 0 0 16px;
 }
+
 .sidebar .user .active {
   position: absolute;
   background-color: #198754;
@@ -218,28 +229,28 @@ li {
   top: 28px;
   right: 0;
 }
-.sidebar .user .user-name h6 {
+
+.user .user-name h6 {
   font-weight: 700;
   line-height: 1.2;
   color: var(--white-color);
   font-family: var(--secondary-font-family);
   font-size: 1rem;
 }
+
 .sidebar .user .user-name span {
   font-size: 1rem;
   font-family: var(--primary-font-family);
   color: var(--title-font);
 }
 
-.sidebar .navbar ul li.item-list {
-}
-.sidebar .navbar ul .item-list a {
+.navbar ul .item-list a {
   color: var(--title-font);
   padding: 7px 20px;
   display: block;
 }
 
-.sidebar .navbar ul li a i {
+.navbar ul li a i {
   font-size: 18px;
   width: 40px;
   height: 40px;
@@ -248,32 +259,43 @@ li {
   border-radius: 40px;
   margin: 0 8px 0 0;
 }
-.sidebar .navbar ul .active {
+
+/* .navbar.active ul {
   background-color: var(--bg-color-dark);
   border-left: 3px solid var(--primary-color);
   border-radius: 0 30px 30px 0;
 }
-.sidebar .navbar ul .active a {
+.navbar.active ul a {
   color: var(--primary-color);
 }
-.sidebar .navbar ul .active a i {
+.navbar.active ul a i {
   background-color: #191c24;
+} */
+/* .sidebar .navbar ul .active {
 }
+.sidebar .navbar ul .active a {
+}
+.sidebar .navbar ul .active a i {
+} */
 .sidebar li .dropdown-menu {
   display: none;
 }
+
 .sidebar li .dropdown-menu {
   padding: 8px 0;
   margin: 2px 0 0;
 }
+
 .sidebar li .dropdown-menu a {
-  padding: 4px 16px 4px 5px;
+  padding: 4px 16px 4px 25px;
   display: block;
 }
+
 .sidebar .item-list .dropdown-menu a:hover {
   background-color: var(--bg-color-dark);
   border-radius: 0 30px 30px 0;
 }
+
 .sidebar li .dropdown::after {
   content: "\f107";
   font-family: "Font Awesome 6 Free";
@@ -321,12 +343,73 @@ li {
   display: block;
   font-weight: 400;
 }
+
 .outline {
   outline: 3px solid rgba(235, 22, 22, 0.3);
 }
 
 .header-main .search .form-control::placeholder {
   font-size: 16px;
+}
+
+.header-main .user-image {
+  margin: 0 8px 0 0;
+}
+
+.header-main .dropdown-menu {
+  position: absolute;
+  padding: 0.5rem 0;
+  z-index: 1000;
+  display: none;
+  min-width: 10rem;
+  font-size: 1rem;
+  list-style: none;
+  background-color: var(--sidebar-color-dark);
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 5px;
+}
+
+.header-main .dropdown-menu ul li a {
+  transition: all 0.5s ease-in-out;
+}
+
+.header-main .dropdown-menu ul li a:hover {
+  background-color: var(--bg-color-dark);
+}
+
+.header-main li .dropdown::after {
+  content: "\f107";
+  font-family: "Font Awesome 6 Free";
+  font-size: 14px;
+  position: absolute;
+  font-weight: 900;
+  top: 18px;
+  right: -3px;
+  color: var(--title-font);
+  transition: 0.5s;
+}
+
+.header-main ul li .dropdown-item .msg {
+  margin: 0 0 0 8px;
+}
+.header-main ul li .dropdown-item .msg h6 {
+  font-size: 16px;
+  color: var(--white-color);
+  font-family: var(--secondary-font-family);
+}
+.header-main ul li .dropdown-item .msg small {
+  font-size: 14px;
+}
+
+.header-main .dropdown-menu .dropdown-divider {
+  height: 1px;
+  margin: 0.5rem 0;
+  overflow: hidden;
+  border-top: 1px solid rgba(0, 0, 0, 0.15);
+  color: inherit;
+  background-color: var(--title-font);
+  border: 0;
+  opacity: 0.25;
 }
 
 /* main-content */
