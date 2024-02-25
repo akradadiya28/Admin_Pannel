@@ -37,15 +37,15 @@
         <div class="navbar">
           <ul>
             <li class="item-list active">
-              <a href="javascriptt:void(0)">
+              <a href="javascript:void(0)">
                 <i
                   class="fa fa-tachometer-alt d-flex items-center justify-center"
                 ></i>
                 <span>Dashboard</span>
               </a>
             </li>
-            <li class="item-list pos-relative">
-              <a href="javascriptt:void(0)" class="dropdown">
+            <li class="item-list">
+              <a href="javascript:void(0)" class="dropdown pos-relative">
                 <i class="fa fa-laptop d-flex items-center justify-center"></i>
                 <span>Elements</span>
               </a>
@@ -70,13 +70,13 @@
               </div>
             </li>
             <li class="item-list">
-              <a href="javascriptt:void(0)">
+              <a href="javascript:void(0)">
                 <i class="fa fa-th d-flex items-center justify-center"></i>
                 <span>Widgets</span>
               </a>
             </li>
             <li class="item-list">
-              <a href="javascriptt:void(0)">
+              <a href="javascript:void(0)">
                 <i
                   class="fa fa-keyboard d-flex items-center justify-center"
                 ></i>
@@ -84,21 +84,21 @@
               </a>
             </li>
             <li class="item-list">
-              <a href="javascriptt:void(0)">
+              <a href="javascript:void(0)">
                 <i class="fa fa-table d-flex items-center justify-center"></i>
                 <span>Tables</span>
               </a>
             </li>
             <li class="item-list">
-              <a href="javascriptt:void(0)">
+              <a href="javascript:void(0)">
                 <i
                   class="fa fa-chart-bar d-flex items-center justify-center"
                 ></i>
                 <span>Charts</span>
               </a>
             </li>
-            <li class="item-list pos-relative">
-              <a href="javascriptt:void(0)" class="dropdown">
+            <li class="item-list">
+              <a href="javascript:void(0)" class="dropdown pos-relative">
                 <i
                   class="fa fa-file-alt d-flex items-center justify-center"
                 ></i>
@@ -140,7 +140,7 @@
         <div class="container">
           <div class="row">
             <div class="w-4 d-flex">
-              <div class="hamburgar-menu d-flex items-center">
+              <div class="hamburgar-menu d-flex items-center" id="menubar">
                 <a
                   href="javascript:void(0)"
                   class="d-flex items-center justify-center"
@@ -162,8 +162,8 @@
             <div class="w-7">
               <div class="navbar">
                 <ul class="d-flex items-center">
-                  <li class="item-list pos-relative">
-                    <a href="javascriptt:void(0)" class="dropdown">
+                  <li class="item-list">
+                    <a href="javascript:void(0)" class="dropdown pos-relative">
                       <i
                         class="fa fa-envelope d-flex items-center justify-center"
                       ></i>
@@ -224,8 +224,8 @@
                       </ul>
                     </div>
                   </li>
-                  <li class="item-list pos-relative">
-                    <a href="javascriptt:void(0)" class="dropdown">
+                  <li class="item-list">
+                    <a href="javascript:void(0)" class="dropdown pos-relative">
                       <i
                         class="fa fa-bell d-flex items-center justify-center"
                       ></i>
@@ -271,8 +271,8 @@
                       </ul>
                     </div>
                   </li>
-                  <li class="item-list pos-relative">
-                    <a href="javascriptt:void(0)" class="dropdown">
+                  <li class="item-list">
+                    <a href="javascript:void(0)" class="dropdown pos-relative">
                       <div class="user d-flex items-center">
                         <div
                           class="user-image pos-relative d-flex items-center"
@@ -311,7 +311,103 @@
     </header>
     <!-- main -->
     <main>
-      <div class="main-content"></div>
+      <!-- main-area -->
+      <div class="main-area">
+        <!-- sales-start -->
+        <div class="sale-start">
+          <div class="container">
+            <div class="row">
+              <div class="w-3">
+                <div class="sale d-flex justify-between">
+                  <i class="fa fa-chart-line"></i>
+                  <div class="sale-text">
+                    <p>Today Sale</p>
+                    <h6>$1234</h6>
+                  </div>
+                </div>
+              </div>
+              <div class="w-3">
+                <div class="sale d-flex justify-between">
+                  <i class="fa fa-chart-bar"></i>
+                  <div class="sale-text">
+                    <p>Total Sale</p>
+                    <h6>$1234</h6>
+                  </div>
+                </div>
+              </div>
+              <div class="w-3">
+                <div class="sale d-flex justify-between">
+                  <i class="fa fa-chart-area"></i>
+                  <div class="sale-text">
+                    <p>Today Revenue</p>
+                    <h6>$1234</h6>
+                  </div>
+                </div>
+              </div>
+              <div class="w-3">
+                <div class="sale d-flex justify-between">
+                  <i class="fa fa-chart-pie"></i>
+                  <div class="sale-text">
+                    <p>Total Revenue</p>
+                    <h6>$1234</h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- chart -->
+        <div class="chart">
+          <div class="container">
+            <div class="row row-gap">
+              <div class="w-6">
+                <div class="chart-content">
+                  <div class="chart-text d-flex justify-between">
+                    <h6>Worldwide Sales</h6>
+                    <a href="javascript:void(0)">Show All</a>
+                  </div>
+                </div>
+              </div>
+              <div class="w-6">
+                <div class="chart-content">
+                  <div class="chart-text d-flex justify-between">
+                    <h6>Sales & Revenue</h6>
+                    <a href="javascript:void(0)">Show All</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- sales-table -->
+        <div class="sales-table">
+          <div class="container">
+            <div class="row">
+              <div class="w-12">
+                <div class="table-text d-flex justify-between">
+                  <h6>Recent Sales</h6>
+                  <a href="javascript:void(0)">Show All</a>
+                </div>
+              </div>
+              <div class="table">
+                <table>
+                  <tr>
+                    <th>
+                      <input type="checkbox" class="form-check-input" />
+                    </th>
+                    <th>Date</th>
+                    <th>Invoice</th>
+                    <th>Customer</th>
+                    <th>Amount</th>
+                    <th>Status</th>
+                    <th>Action</th>
+                  </tr>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </main>
     <!-- javascript -->
     <script src="js/jquery.min.js"></script>

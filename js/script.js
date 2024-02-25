@@ -8,4 +8,8 @@ $(document).ready(function () {
     $(".form-control").click(function () {
         $(this).addClass("outline");
     })
+    $("#menubar").click(function () {
+        console.log("hello");
+        $("body").toggleClass("close");
+    })
 })
