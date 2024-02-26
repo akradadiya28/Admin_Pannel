@@ -316,7 +316,7 @@
         <!-- sales-start -->
         <div class="sale-start">
           <div class="container">
-            <div class="row">
+            <div class="row m-b-24">
               <div class="w-3">
                 <div class="sale d-flex justify-between">
                   <i class="fa fa-chart-line"></i>
@@ -359,12 +359,15 @@
         <!-- chart -->
         <div class="chart">
           <div class="container">
-            <div class="row row-gap">
+            <div class="row m-b-24">
               <div class="w-6">
                 <div class="chart-content">
                   <div class="chart-text d-flex justify-between">
                     <h6>Worldwide Sales</h6>
                     <a href="javascript:void(0)">Show All</a>
+                  </div>
+                  <div>
+                    <canvas id="salesChart"></canvas>
                   </div>
                 </div>
               </div>
@@ -392,9 +395,7 @@
               <div class="table">
                 <table>
                   <tr>
-                    <th>
-                      <input type="checkbox" class="form-check-input" />
-                    </th>
+                    <th><input type="checkbox" class="form-check-input" /></th>
                     <th>Date</th>
                     <th>Invoice</th>
                     <th>Customer</th>
@@ -411,6 +412,7 @@
     </main>
     <!-- javascript -->
     <script src="js/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="js/script.js"></script>
   </body>
 </html>
