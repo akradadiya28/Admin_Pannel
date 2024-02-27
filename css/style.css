@@ -477,14 +477,16 @@ body.close .main-area {
 }
 
 .main-area .chart .chart-content .chart-text h6,
-.table-text h6 {
+.table-text h6,
+.msg-text h6 {
   font-family: var(--secondary-font-family);
   font-size: 1rem;
   color: var(--white-color);
 }
 
 .main-area .chart .chart-content .chart-text a,
-.table-text a {
+.table-text a,
+.msg-text a {
   color: var(--primary-color);
 }
 
@@ -501,10 +503,54 @@ body.close .main-area {
   margin-top: 4px;
   vertical-align: top;
   background-color: var(--bg-color-dark);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
   border: 1px solid rgba(0, 0, 0, 0.25);
-  appearance: none;
+  /* appearance: none; */
   border-radius: 0.25em;
+}
+table {
+  border: 1px solid;
+  caption-side: bottom;
+  border-collapse: collapse;
+  text-align: left;
+}
+.main-area .sales-table .table th {
+  color: var(--white-color);
+  padding: 8px;
+  font-weight: 600;
+}
+.detail-btn {
+  color: var(--white-color);
+  background-color: var(--primary-color);
+  padding: 0.25rem 0.5rem;
+  font-size: 0.875rem;
+  border-radius: 0.2em;
+}
+.main-area .sales-table .table td {
+  padding: 8px;
+  color: var(--title-font);
+}
+
+/* widgets */
+.main-area .widgets .messages {
+  background-color: var(--sidebar-color-dark);
+  padding: 24px;
+  border-radius: 5px;
+}
+.msg-text {
+  margin: 0 0 8px;
+}
+.msg-title h6 {
+  font-size: 1rem;
+  color: var(--white-color);
+  font-family: var(--secondary-font-family);
+}
+.m-16 {
+  margin: 0 0 0 16px;
+}
+.msg-title p {
+  font-size: 0.875rem;
+  color: var(--title-font);
+}
+.msg-p span {
+  color: var(--title-font);
 }
