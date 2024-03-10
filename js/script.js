@@ -1,3 +1,8 @@
+// loader
+$(window).on("load", function () {
+    $("#loader-wrapper").delay(3000).fadeToggle("fast");
+})
+
 $(document).ready(function () {
     $(".dropdown").click(function () {
         $(this).next(".dropdown-menu").slideToggle("fast");
@@ -9,8 +14,8 @@ $(document).ready(function () {
         $(this).addClass("outline");
     })
     $("#menubar").click(function () {
-        console.log("hello");
         $("body").toggleClass("close");
+        $("#jend").toggleClass("justify-end");
     })
 })
 // chart bar
@@ -44,3 +49,52 @@ new Chart(ctx, {
         }
     }
 });
+
+const ctx1 = document.getElementById('revChart');
+
+new Chart(ctx1, {
+
+    type: 'line',
+    data: {
+        labels: ['2016', '2017', '2018', '2019', '2020', '2021', '2022'],
+        datasets: [{
+            label: 'Sales',
+            data: [15, 30, 55, 45, 70, 65, 85],
+            fill: true,
+            borderColor: 'rgb(0, 0, 0)',
+            backgroundColor: '#a91617',
+            tension: 0.1
+        },
+        {
+            label: 'Revenue',
+            data: [99, 135, 170, 130, 190, 180, 270],
+            fill: true,
+            borderColor: 'rgb(0, 0, 0)',
+            backgroundColor: 'rgba(169, 22, 23, 0.6)',
+            tension: 0.1
+        },
+        ]
+    },
+
+});
+// calander
+// document.addEventListener('DOMContentLoaded', function () {
+//     var calendarEl = document.getElementById('calendar');
+
+//     var calendar = new FullCalendar.Calendar(calendarEl, {
+//         selectable: true,
+//         headerToolbar: {
+//             left: 'prev,next today',
+//             center: 'title',
+//             right: 'dayGridMonth,timeGridWeek,timeGridDay'
+//         },
+//         dateClick: function (info) {
+//             alert('clicked ' + info.dateStr);
+//         },
+//         select: function (info) {
+//             alert('selected ' + info.startStr + ' to ' + info.endStr);
+//         }
+//     });
+
+//     calendar.render();
+// });
