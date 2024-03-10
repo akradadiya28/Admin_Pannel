@@ -608,7 +608,9 @@ table tbody tr:hover {
   border: none;
   color: var(--title-font);
 }
-
+.fc-direction-ltr {
+  color: var(--title-font);
+}
 /* footer */
 .footer {
   background-color: var(--sidebar-color-dark);
