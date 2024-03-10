@@ -262,6 +262,7 @@ body.close .sidebar .logo {
   color: var(--title-font);
   padding: 7px 20px;
   display: block;
+  transition: all 0.15s ease-in-out;
 }
 
 .navbar ul li a i {
@@ -273,16 +274,26 @@ body.close .sidebar .logo {
   border-radius: 40px;
   margin: 0 8px 0 0;
 }
-
-.navbar.active ul {
+.navbar ul li a.activeli {
   background-color: var(--bg-color-dark);
   border-left: 3px solid var(--primary-color);
   border-radius: 0 30px 30px 0;
 }
-.navbar.active ul a {
+.navbar ul li a.activeli {
   color: var(--primary-color);
 }
-.navbar.active ul a i {
+.navbar ul li a.activeli i {
+  background-color: #191c24;
+}
+.sidebar .navbar ul li:hover .act {
+  background-color: var(--bg-color-dark);
+  border-left: 3px solid var(--primary-color);
+  border-radius: 0 30px 30px 0;
+}
+.sidebar .navbar ul li:hover .act {
+  color: var(--primary-color);
+}
+.sidebar .navbar ul li:hover .act i {
   background-color: #191c24;
 }
 
@@ -300,7 +311,7 @@ body.close .sidebar .logo {
   display: block;
 }
 
-.sidebar .item-list .dropdown-menu a:hover {
+.sidebar .dropdown-menu a:hover {
   background-color: var(--bg-color-dark);
   border-radius: 0 30px 30px 0;
 }
@@ -315,6 +326,9 @@ body.close .sidebar .logo {
   right: 30px;
   color: var(--title-font);
   transition: 0.5s;
+}
+.sidebar ul li:hover .dropdown::after {
+  color: var(--primary-color);
 }
 
 /* header */
@@ -369,6 +383,9 @@ body.close .sidebar .logo {
 .header-main .user-image {
   margin: 0 8px 0 0;
 }
+.header-main .activeness li:hover .act2 {
+  color: var(--primary-color);
+}
 
 .header-main .dropdown-menu {
   position: absolute;
@@ -402,6 +419,9 @@ body.close .sidebar .logo {
   right: -3px;
   color: var(--title-font);
   transition: 0.5s;
+}
+.header-main .activeness li:hover .dropdown::after {
+  color: var(--primary-color);
 }
 
 .header-main ul li .dropdown-item .msg {

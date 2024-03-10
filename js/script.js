@@ -1,8 +1,3 @@
-// loader
-$(window).on("load", function () {
-    $("#loader-wrapper").delay(3000).fadeToggle("fast");
-})
-
 $(document).ready(function () {
     $(".dropdown").click(function () {
         $(this).next(".dropdown-menu").slideToggle("fast");
